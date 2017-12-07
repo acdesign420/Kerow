@@ -38,7 +38,7 @@
                 <a href="#">Contact</a>
 
             </div>
-            <span  id="menu-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <span id="menu-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
         </nav>
 
         <nav id="desktop-nav">
@@ -79,7 +79,7 @@
             <h1> Clients reviews</h1>
         </div>
         <div class="contact">
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
             <div class="contact-form">
                 <form>
                     <label for="fname">Name</label>
@@ -100,7 +100,7 @@
                 <div class="hours"> Monday | Friday: 10.00-16.00 </div>
                 <div class="social-icons">
                     <a target="_blank" href="https://www.facebook.com/kerow.official/"> <span class="fa fa-facebook"></span></a>
-            <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
+                    <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
                 </div>
             </div>
         </div>
@@ -108,13 +108,14 @@
     <footer class="main-footer">
         <div class="map">
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCrj4UblCjU9TCo8Grh0XY2_b0lRohqymk'></script>
-            <div style='overflow:hidden;height:382px;width:1450px;'>
-                <div id='gmap_canvas' style='height:382px;width:1500px;'></div>
+            <div class="map_frame">
+                <div id='gmap_canvas' class="map"></div>
                 <style>
                     #gmap_canvas img {
                         max-width: none!important;
                         background: none!important
                     }
+
                 </style>
             </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
             <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=12783a8ea22b5c6f88b1e3af94b78e4db68b2961'></script>
@@ -139,10 +140,10 @@
                     infowindow.open(map, marker);
                 }
                 google.maps.event.addDomListener(window, 'load', init_map);
+
             </script>
         </div>
     </footer>
-    <script src="main.js"></script>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
@@ -151,7 +152,9 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
     </script>
+    <script src="styles.js"></script>
 </body>
 
 </html>
