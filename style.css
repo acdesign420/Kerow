@@ -350,3 +350,15 @@ input[type=submit] {
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
+@media(min-width: 760px){
+    #list {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 992px){
+    #list {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
