@@ -1,12 +1,50 @@
-/*General------------------------*/
+/*
 
+gold: #FFD700;
+grey: #021a23;
+
+font-family: 'Secular One', sans-serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Teko', sans-serif;
+
+General------------------------*/
+
+@font-face {
+    font-family: 'tancursive';
+    src: url('Tangerine_Bold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Secular+One');
+@import url('https://fonts.googleapis.com/css?family=Teko');
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+    font-size: 1em;
+    font-family: Raleway, sans-serif;
+    border: 1px solid red;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    font-family: Raleway, sans-serif;
+    background-color: #000608;
     color: #FFF;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Teko', sans-serif;
+}
+
+h4 {
+    font-family: 'tancursive', cursive;
+    color: #8c6901;
+    font-size: 2em;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
 }
 
 /*Header------------------------*/
@@ -21,6 +59,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+    font-size: 2.5em;
+    margin-left: 13px;
 }
 
 .sidenav {
@@ -53,9 +93,9 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: 36px;
-    margin-left: 50px;
+    padding: 8px 21px;
 }
 
 /*HERO styles------------------------*/
@@ -189,7 +229,7 @@ section h2 span {
     font-style: normal;
 }
 
-.artists h1 {
+.artists h2 {
     text-align: center;
 }
 
@@ -207,7 +247,6 @@ section h2 span {
 }
 
 .responsive-image {
-    max-width: 100%;
     filter: grayscale(100%);
 }
 
@@ -259,17 +298,33 @@ section h2 span {
 
 /* REVIEWS SECTION*/
 
-.reviews h1,
-.contact h1 {
+.reviews h2,
+.contact h2 {
     text-align: center;
 }
 
-.reviews {
-    height: 600px;
-    background-color: grey;
+.reviews h2 {
+    color: black;
 }
 
-/* CONTACT FORM STYLE*/
+.reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    min-height: 50vh;
+}
+
+.artcl-img {
+    display: none;
+}
+
+.artst-img {
+
+}
+
+
+
+/* CONTACT FORM STYLE -----------------*/
 
 .contact-form {
     padding: 10px;
