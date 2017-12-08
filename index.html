@@ -38,7 +38,7 @@
                 <a href="#">Contact</a>
 
             </div>
-            <span id="menu-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <span id="menu-bar" style="cursor:pointer" onclick="openNav()">&#9776; </span>
         </nav>
 
         <nav id="desktop-nav">
@@ -47,10 +47,12 @@
     </header>
     <div class="main-body">
         <div class="artists">
-            <h1>Our Artists</h1>
+            <h2>Our Artists</h2>
             <div class="grid">
                 <div class="containerP">
-                    <img src="images/viktor.jpg" class="responsive-image" alt="gate" class="image">
+                    <div class="artst-img">
+                        <img src="images/viktor.jpg" class="responsive-image img" alt="gate">
+                    </div>
                     <div class="overlay">
                         <div class="text">
                             <h3>Viktor</h3>
@@ -62,7 +64,9 @@
                     </div>
                 </div>
                 <div class="containerP">
-                    <img src="images/oskar.jpg" class="responsive-image" alt="gate" class="image">
+                    <div class="artst-img">
+                        <img src="images/oskar.jpg" class="responsive-image img" alt="gate">
+                    </div>
                     <div class="overlay">
                         <div class="text">
                             <h3>Oskar</h3>
@@ -76,7 +80,11 @@
 
         </div>
         <div class="reviews">
-            <h1> Clients reviews</h1>
+            <article id="artcl-rev" class="artcl-rev">
+                <h4>Client reviews</h4>
+                <h2>What our customers say</h2>
+            </article>
+            <div class="artcl-img"><img src="images/owl.png" class="img"></div>
         </div>
         <div class="contact">
             <h2>Contact Us</h2>
@@ -115,7 +123,6 @@
                         max-width: none!important;
                         background: none!important
                     }
-
                 </style>
             </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
             <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=12783a8ea22b5c6f88b1e3af94b78e4db68b2961'></script>
@@ -140,7 +147,6 @@
                     infowindow.open(map, marker);
                 }
                 google.maps.event.addDomListener(window, 'load', init_map);
-
             </script>
         </div>
     </footer>
@@ -152,7 +158,6 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
     <script src="styles.js"></script>
 </body>
