@@ -21,8 +21,11 @@ General------------------------*/
 * {
     font-size: 1em;
     font-family: Raleway, sans-serif;
+}
+/*
     border: 1px solid red;
 }
+*/
 
 body {
     margin: 0;
@@ -406,7 +409,7 @@ input[type=submit] {
       -webkit-transform: scale(1.01);
     }
 @media(min-width: 760px){
-    #list {
+    #list, .grid {
     display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -417,3 +420,18 @@ input[type=submit] {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* Artist page */
+.bio img {
+
+    padding: 80px 20px;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+      -webkit-transition: all .8s ease-in-out;
+
+}
+
+.bio img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
