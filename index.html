@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerow Tattoo Studio</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,7 +31,7 @@
     <!--end hero -->
     <header class="main-header">
 
-        <nav id="mobile-nav">
+        <div id="mobile-nav">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
@@ -39,25 +41,24 @@
 
             </div>
             <span id="menu-bar" style="cursor:pointer" onclick="openNav()">&#9776; </span>
-        </nav>
+        </div>
 
         <nav id="desktop-nav">
             <div class="logo"></div>
-            <ul>
-                <li></li>
-            </ul>
         </nav>
 
     </header>
     <div class="main-body">
-        <div class="about">
+        <section class="about">
             <div class="width-fix">
+                <h4>About us</h4>
                 <h2>Who we are</h2>
-                <p>We tattoo people</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis diam. Nullam at arcu a est sollicitudin euismod. Aliquam erat volutpat. Etiam commodo dui eget wisi. Etiam dictum tincidunt diam. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nunc auctor. Fusce aliquam vestibulum ipsum. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Fusce suscipit libero eget elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Suspendisse nisl. Aliquam erat volutpat.</p>
             </div>
-        </div>
-        <div class="artists">
-            <h2>Our Artists</h2>
+        </section>
+        <section class="artists">
+            <h4>Our Team</h4>
+            <h2>Find out who we are</h2>
             <div class="grid">
                 <div class="containerP">
                     <div class="artst-img">
@@ -66,7 +67,7 @@
                     <div class="overlay">
                         <div class="text">
                             <h3>Viktor</h3>
-                            <h5>Style: Traditional tattoos</h5>
+                            <h5><span>Style:</span> Traditional tattoos</h5>
                             <p>Viktor have tried his first tattoos in 2013 and from 1.1.2014 he quit his job and he is doing everything to live of from tattooing. </p>
 
 
@@ -80,7 +81,7 @@
                     <div class="overlay">
                         <div class="text">
                             <h3>Oskar</h3>
-                            <h5>Style: Blackwork tattoos</h5>
+                            <h5><span>Style:</span> Blackwork tattoos</h5>
                             <p>Oskar is focused on his own artwork, old-school raw black work tattoo style. He's started his first tattoos at Kerow this year in may.</p>
 
                         </div>
@@ -88,40 +89,45 @@
                 </div>
             </div>
 
-        </div>
-        <div class="reviews">
+        </section>
+        <section class="reviews">
             <article id="artcl-rev" class="artcl-rev">
                 <h4>Client reviews</h4>
                 <h2>What our customers say</h2>
             </article>
             <div class="artcl-img"><img src="images/owl.png" class="img"></div>
-        </div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-form">
-                <form>
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname">
+        </section>
+        <section class="contact">
+            <h4>Contact us</h4>
+            <h2>Get in touch with us</h2>
+            <div class="con-flex">
+                <div class="contact-form flex-item">
+                    <form>
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname">
 
-                    <label for="lname">Subject</label>
-                    <input type="text" id="lname" name="lastname">
+                        <label for="lname">Subject</label>
+                        <input type="text" id="lname" name="lastname">
 
 
-                    <label for="subject">Message</label>
-                    <textarea id="subject" name="subject" style="height:200px"></textarea>
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="contact-info">
-                <div class="mobile footer-info"> +421 949 *** ***</div>
-                <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
-                <div class="social-icons footer-info">
-                    <a target="_blank" href="https://www.facebook.com/kerow.official/"> <span class="fa fa-facebook"></span></a>
-                    <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="contact-info flex-item">
+                    <div class="mobile footer-info"> +421 949 *** ***</div>
+                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                    <div class="social-icons footer-info">
+                        <a target="_blank" href="https://www.facebook.com/kerow.official/"> <span class="fa fa-facebook"></span></a>
+                        <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <footer class="main-footer">
         <div class="map">
