@@ -431,7 +431,7 @@ input[type=submit]:active {
 @media(min-width: 760px){
     #list, .grid {
     display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media(min-width: 992px){
