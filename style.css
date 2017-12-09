@@ -465,7 +465,6 @@ input[type=submit]:active {
 
 #list img:hover {
     filter: none;
-<<<<<<< HEAD
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
 }
@@ -475,7 +474,6 @@ input[type=submit]:active {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-=======
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
@@ -483,7 +481,6 @@ input[type=submit]:active {
     #list, .grid {
     display: grid;
         grid-template-columns: repeat(3, 1fr);
->>>>>>> Kerow/master
     }
 }
 
