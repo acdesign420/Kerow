@@ -428,20 +428,14 @@ section h2 {
 .reviews {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     background-image: url(images/artist-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50vh;
-=======
     background-color: #f6f6f6;
-<<<<<<< HEAD
     min-height: 80vh;
->>>>>>> Kerow/master
-=======
     min-height: 50vh;
->>>>>>> Kerow/master
 }
 
 .artcl-img {
