@@ -438,6 +438,10 @@ section h2 {
     min-height: 50vh;
 }
 
+.article-rev {
+    padding: 20px;
+}
+
 .artcl-img {
     display: none;
 }
