@@ -15,6 +15,10 @@ function getBio(){
         .then(showBio);
 }
 
+
+// showing the photos and description in artists.html
+
+
 function showBio(json){
 
     console.log(json);
@@ -37,23 +41,29 @@ function showBio(json){
         clone.querySelector('.containerP').addEventListener('click', function(){
             location =  'artist.html?artistid='+theArtist.id+'&categoryid='+theArtist.acf.categoryid;
         })
-        parent.appendChild(clone)
+        parent.appendChild(clone);
+
+
     })
 
 }
+
+// showing the photos of specific artist in artist.html
 
 function showPhotos(data) {
     //console.log(data);
     let list = document.querySelector("#list");
     let template = document.querySelector("#gallery-template").content;
 
+
+
     data.forEach(function (theTattoo) {
         //  console.log(theTattoo);
         let clone = template.cloneNode(true);
-        let title = clone.querySelector("h2");
+
         let img = clone.querySelector("img");
 
-        title.innerHTML = theTattoo.title.rendered;
+
         img.setAttribute("src", theTattoo.acf.photo.sizes.medium);
         list.appendChild(clone);
     })
@@ -61,6 +71,48 @@ function showPhotos(data) {
 
 
 }
+
+
+// Show single bio  of artist next to gallery in artist.html from different database as gallery is
+
+function getSingleBio(){
+
+          fetch("http://acdesign.in/MyWordPress/wp-json/wp/v2/artist?_embed")
+        .then(res => res.json())
+        .then(showSingleBio);
+}
+
+function showSingleBio(json){
+
+    console.log(json);
+
+    let list = document.querySelector("#bio");
+    let template = document.querySelector("#about-artist").content;
+
+    json.forEach(function(theArtist){
+
+        let clone= template.cloneNode(true);
+        let name = clone.querySelector("h2");
+        let style = clone.querySelector("h4");
+        let description = clone.querySelector("p");
+        let img = clone.querySelector("img");
+
+        name.textContent = theArtist.acf.name;
+
+        style.textContent = theArtist.acf.style;
+        description.textContent = theArtist.acf.description;
+        img.setAttribute("src", theArtist._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url);
+
+
+        list.appendChild(clone);
+
+
+
+    })
+
+}
+
+
 
 function getArtists() {
     fetch("http://acdesign.in/MyWordPress/wp-json/wp/v2/categories")
@@ -70,20 +122,10 @@ function getArtists() {
 }
 
 function showArtists(categories) {
-    console.log(categories);
+   // console.log(categories);
 
 
-    let sa = document.querySelector("#sort-artist").content;
 
-    categories.forEach(function (category) {
-        let clone = sa.cloneNode(true);
-        let parent = document.querySelector("#artists-categories");
-        clone.querySelector("a").textContent = category.name;
-        clone.querySelector("a").setAttribute("href","gallery.html?tagid="+ category.id);
-        parent.appendChild(clone);
-
-
-    })
 
 
 
@@ -93,4 +135,5 @@ function showArtists(categories) {
 getBio();
 getArtists();
 getAllPhotos();
+getSingleBio();
 
