@@ -428,17 +428,16 @@ input[type=submit]:active {
 .social-icons span {
     color: #FFF;
 }
-
 .fa-facebook:hover,
-.fa-instagram:hover,
-    {
-    color: goldenrod;
+.fa-instagram:hover {
+    color: #CFA670;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s
 }
+
 
 .map_frame {
     border: 1px solid red;
