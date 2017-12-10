@@ -213,30 +213,31 @@ h5 span {
 
 .scroll,
 .scroll:before {
-  position: absolute;
-  left: 50%;
+    position: absolute;
+    left: 50%;
 }
+
 .scroll {
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: 90px;
-  box-shadow: inset 0 0 0 1px #fff;
-  border-radius: 25px;
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: 90px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
 }
 
 .scroll:before {
-  content:"";
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
 }
 
 @keyframes scroll {
@@ -244,7 +245,7 @@ h5 span {
         opacity: 1;
     }
     100% {
-    opacity: 0;
+        opacity: 0;
         transform: translateY(46px);
     }
 }
@@ -541,6 +542,10 @@ input[type=submit]:active {
 
 /* Gallery page ------------------------*/
 
+.artists-gal {
+    padding-top: 57px;
+}
+
 #list img {
     display: block;
     margin: auto;
@@ -556,122 +561,142 @@ input[type=submit]:active {
     -webkit-transform: scale(1.01);
 }
 
-@media(min-width: 760px) {
-    #list,
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        -webkit-filter: grayscale(0);
-        -webkit-transform: scale(1.01);
-    }
-    @media(min-width: 760px) {
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
+/* Artist page */
 
-    @media(min-width: 992px) {
-        #list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+.bio-gal p {
+    padding:
+}
 
-    /* Artist page */
-    .bio img {
+.bio img {
 
-        padding: 80px 20px;
-        filter: gray;
-        -webkit-filter: grayscale(1);
-        -webkit-transition: all .8s ease-in-out;
+    padding: 80px 20px;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .8s ease-in-out;
+}
 
-    }
+.artist-main-body {
+    display: flex;
+    flex-direction: column;
+}
 
-    .bio img:hover {
-        filter: none;
-        -webkit-filter: grayscale(0);
-        -webkit-transform: scale(1.01);
-    }
+.bio img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+.img-gal {
+    display: flex;
+    justify-content: center;
+}
+
+/*Media Queries------------------------*/
+
+@media only screen and (min-width: 768px) {
     .artist-main-body {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
     }
 
-    /*Media Queries------------------------*/
-    @media only screen and (min-width: 768px) {
-        .con-flex {
-            flex-direction: row;
-        }
-
-        .flex-item {
-            width: 50%;
-        }
-
-        form {
-            width: 90%;
-            margin: auto;
-        }
-
-        .contact-form {
-            padding: 0;
-        }
-
-        .contact-info {
-            order: -1;
-        }
-
-        #mobile-nav {
-            display: none;
-        }
-
-        #desktop-nav {
-            display: block;
-        }
-
-        #desktop-nav a {
-            display: inline-block;
-            font-size: 1.15em;
-            text-decoration: none;
-            color: #f6f6f6;
-            padding: 10px 15px;
-        }
-
-        #desktop-nav a:hover {
-            color: #CFA670;
-        }
-
-        #desktop-nav div {
-            margin-right: auto;
-        }
-
-        .logo {
-            width: 8vw;
-        }
-
-        .hero-text img {
-            display: none;
-        }
-
-        .hero-desktop {
-            display: block;
-        }
+    .right {
+        margin-top: 48px;
     }
 
-    @media only screen and (min-width: 1024px) {
-        .grid,
-        .width-fix {
-            width: 85%;
-            margin: auto;
-            padding: 0;
-        }
-
-        .con-flex {
-            width: 85%;
-            margin: auto;
-        }
-
-        .logo {
-            width: 5vw;
-        }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.01);
     }
+
+    #list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .con-flex {
+        flex-direction: row;
+    }
+
+    .flex-item {
+        width: 50%;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+
+    .contact-info {
+        order: -1;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #desktop-nav {
+        display: block;
+    }
+
+    #desktop-nav a {
+        display: inline-block;
+        font-size: 1.15em;
+        text-decoration: none;
+        color: #f6f6f6;
+        padding: 10px 15px;
+    }
+
+    #desktop-nav a:hover {
+        color: #CFA670;
+    }
+
+    #desktop-nav div {
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 8vw;
+    }
+
+    .hero-text img {
+        display: none;
+    }
+
+    .hero-desktop {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid,
+    .width-fix {
+        width: 85%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .con-flex {
+        width: 85%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 5vw;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
