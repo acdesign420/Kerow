@@ -4,34 +4,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Kerow Tattoo Studio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="main-header">
-
-        <nav id="mobile-nav">
+        <div id="mobile-nav">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
+                <a href="#">Home</a>
                 <a href="artists.html">Artists</a>
                 <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <a href="#sec-contact">Contact</a>
 
             </div>
-            <span id="menu-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        </nav>
+            <span id="menu-bar" style="cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
 
         <nav id="desktop-nav">
+            <div class="width-nav">
+                <div class="logo"><img src="images/logo-white.png" class="img"></div>
+                <a class="desk-nav-a" href="#">Home</a>
+                <a class="desk-nav-a" href="artists.html">Artists</a>
+                <a class="desk-nav-a" href="#">FAQ</a>
+                <a class="desk-nav-a" href="#sec-contact">Contact</a>
+            </div>
         </nav>
 
     </header>
     <div class="artist-main-body">
-    <div class="left">
-        <section id="bio"></section>
+        <div class="left">
+            <section id="bio"></section>
         </div>
-     <template id="about-artist">
+        <template id="about-artist">
         <h2 class="artist-name"></h2>
          <div class="img">
          <img src="" alt="">
@@ -43,10 +52,10 @@
 
 
 
-    <div class="right">
-        <section id="list" class="section"></section>
-    </div>
-    <template id="gallery-template">
+        <div class="right">
+            <section id="list" class="section"></section>
+        </div>
+        <template id="gallery-template">
                     <article class="Gallery">
                         <h2 class="tattoo-title"></h2>
 
@@ -56,6 +65,77 @@
                     </article>
                 </template>
     </div>
+    <section id="sec-contact" class="contact">
+        <h4>Contact us</h4>
+        <h2>Get in touch with us</h2>
+        <div class="con-flex">
+            <div class="contact-form flex-item">
+                <form>
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname">
+
+                    <label for="lname">Subject</label>
+                    <input type="text" id="lname" name="lastname">
+
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="contact-info flex-item">
+                <div class="mobile footer-info"> +421 949 *** ***</div>
+                <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+                <div class="social-icons footer-info">
+                    <a target="_blank" href="https://www.facebook.com/kerow.official/"> <span class="fa fa-facebook"></span></a>
+                    <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="map">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCrj4UblCjU9TCo8Grh0XY2_b0lRohqymk'></script>
+            <div class="map_frame">
+                <div id='gmap_canvas' class="map"></div>
+                <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+            </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
+            <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=12783a8ea22b5c6f88b1e3af94b78e4db68b2961'></script>
+            <script type='text/javascript'>
+                function init_map() {
+                    var myOptions = {
+                        zoom: 16,
+                        center: new google.maps.LatLng(48.7213588, 21.252336499999956),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(48.7213588, 21.252336499999956)
+                    });
+                    infowindow = new google.maps.InfoWindow({
+                        content: '<strong>Kerow Tattoo Studio</strong><br>Moyzesova 36<br>04001 Kosice<br>'
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, 'load', init_map);
+            </script>
+        </div>
+        <div class="bottom-footer">
+            <p class="copyright"><span>Kerow tattoo studio</span> &copy; for education purposes</p>
+        </div>
+    </footer>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
@@ -64,7 +144,6 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
     <script src="main.js"></script>
 </body>

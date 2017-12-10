@@ -20,8 +20,11 @@
             </video>
             <div class="hero-text">
                 <img src="images/logo-white.png">
-
-
+                <div class="hero-desktop">
+                    <h4 class="main-heading-h4">Welcome to</h4>
+                    <h1>Kerow Tattoo Studio</h1>
+                    <div class="scroll"></div>
+                </div>
             </div>
             <!-- end hero-text-->
 
@@ -30,21 +33,26 @@
     </div>
     <!--end hero -->
     <header class="main-header">
-
         <div id="mobile-nav">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
                 <a href="artists.html">Artists</a>
                 <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <a href="#sec-contact">Contact</a>
 
             </div>
             <span id="menu-bar" style="cursor:pointer" onclick="openNav()">&#9776; </span>
         </div>
 
         <nav id="desktop-nav">
-            <div class="logo"></div>
+            <div class="width-nav">
+                <div class="logo"><img src="images/logo-white.png" class="img"></div>
+                <a class="desk-nav-a" href="#">Home</a>
+                <a class="desk-nav-a" href="artists.html">Artists</a>
+                <a class="desk-nav-a" href="#">FAQ</a>
+                <a class="desk-nav-a" href="#sec-contact">Contact</a>
+            </div>
         </nav>
 
     </header>
@@ -52,7 +60,7 @@
         <section class="about">
             <div class="width-fix">
                 <h4>About us</h4>
-                <h2>Who we are</h2>
+                <h2>What do we do</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis diam. Nullam at arcu a est sollicitudin euismod. Aliquam erat volutpat. Etiam commodo dui eget wisi. Etiam dictum tincidunt diam. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nunc auctor. Fusce aliquam vestibulum ipsum. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Fusce suscipit libero eget elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Suspendisse nisl. Aliquam erat volutpat.</p>
             </div>
         </section>
@@ -111,7 +119,7 @@
             </article>
             <div class="artcl-img"><img src="images/owl.png" class="img"></div>
         </section>
-        <section class="contact">
+        <section id="sec-contact" class="contact">
             <h4>Contact us</h4>
             <h2>Get in touch with us</h2>
             <div class="con-flex">
@@ -178,6 +186,9 @@
                 }
                 google.maps.event.addDomListener(window, 'load', init_map);
             </script>
+        </div>
+        <div class="bottom-footer">
+            <p class="copyright"><span>Kerow tattoo studio</span> &copy; for education purposes</p>
         </div>
     </footer>
     <script>
