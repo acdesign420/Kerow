@@ -456,7 +456,7 @@ section h2 {
     position: absolute;
     overflow: hidden;
     color: black;
-    width: 100%;
+    width: 80%;
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -627,7 +627,7 @@ input[type=submit]:active {
 /* Artist page */
 
 .bio-gal p {
-    padding:
+    padding: 5vw;
 }
 
 .bio img {
