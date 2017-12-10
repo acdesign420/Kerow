@@ -428,11 +428,16 @@ section h2 {
 .reviews {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url(images/artist-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50vh;
+=======
+    background-color: #f6f6f6;
+    min-height: 80vh;
+>>>>>>> Kerow/master
 }
 
 .artcl-img {
@@ -449,7 +454,7 @@ section h2 {
     position: absolute;
     overflow: hidden;
     color: black;
-    font-size: 1.7em;
+    width: 100%;
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
@@ -726,6 +731,9 @@ input[type=submit]:active {
 
     .hero-desktop {
         display: block;
+    }
+    .reviews{
+         min-height: 70vh;
     }
 }
 
