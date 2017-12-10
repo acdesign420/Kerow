@@ -436,7 +436,11 @@ section h2 {
     min-height: 50vh;
 =======
     background-color: #f6f6f6;
+<<<<<<< HEAD
     min-height: 80vh;
+>>>>>>> Kerow/master
+=======
+    min-height: 50vh;
 >>>>>>> Kerow/master
 }
 
@@ -732,9 +736,7 @@ input[type=submit]:active {
     .hero-desktop {
         display: block;
     }
-    .reviews{
-         min-height: 70vh;
-    }
+
 }
 
 @media only screen and (min-width: 1024px) {
