@@ -310,6 +310,7 @@ section h2 {
     height: 100%;
     background-color: rgba(0, 6, 8, .7);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .overlay blockquote {
@@ -402,7 +403,15 @@ section h2 {
     align-items: center;
     width: 100%;
     min-height: 55vh;
-    background-color: grey;
+    background-image: url(images/artist-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.art-h2 {
+    margin-top: 60px;
+    margin-bottom: 0;
 }
 
 /* REVIEWS SECTION*/
@@ -419,7 +428,10 @@ section h2 {
 .reviews {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-image: url(images/artist-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 50vh;
 }
 
