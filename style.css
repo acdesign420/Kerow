@@ -25,27 +25,32 @@ General------------------------*/
     /*    border: 1px solid red;*/
 }
 
+a {
+    text-decoration: none;
+    color: #000608;
+}
+
 
 body {
     margin: 0;
     padding: 0;
     background-color: #000608;
-    color: #FFF;
+    color: #f6f6f6;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Oswald', sans-serif;
     margin-top: 0;
 }
 
 .main-heading-h4 {
-    font-size: 3.5em;
-    margin-bottom: -22px;
+    font-size: 3em;
+    margin-bottom: -32px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-family: 'Oswald', sans-serif;
     margin-top: 0;
     margin-bottom: 65px;
@@ -60,9 +65,9 @@ h3 {
 h4 {
     font-family: 'tancursive', cursive;
     color: #CFA670;
-    font-size: 2.7em;
+    font-size: 2.1em;
     text-align: center;
-    margin-bottom: -13px;
+    margin-bottom: -20px;
 }
 
 h5,
@@ -189,7 +194,7 @@ h5 span {
 .hero-text {
     position: absolute;
     /*position: relative; is the standard, but chrome gets confused?*/
-    top: 50%;
+    top: 40%;
     left: 50%;
     /*chrome fix, even old IE 11 works without this fix*/
     transform: translateY(-50%) translateX(-50%);
@@ -200,7 +205,7 @@ h5 span {
     padding-left: 24px;
     padding-right: 24px;
     text-align: center;
-    color: #fff;
+    color: #f6f6f6;
 }
 
 .hero-text img {
@@ -218,11 +223,9 @@ h5 span {
 }
 
 .scroll {
-    width: 40px;
-    height: 70px;
-    margin-left: -20px;
-    top: 50%;
-    margin-top: 90px;
+    width: 30px;
+    height: 45px;
+    margin-top: 25vh;
     box-shadow: inset 0 0 0 1px #fff;
     border-radius: 25px;
 }
@@ -277,6 +280,18 @@ section h2 {
     text-align: center;
     margin-top: -48px;
     padding-top: 15px;
+}
+
+.about p {
+    line-height: 1.5em;
+}
+
+.link-faq {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #CFA670;
+    text-decoration: none;
 }
 
 .width-fix {
@@ -412,6 +427,7 @@ section h2 {
 .art-h2 {
     margin-top: 60px;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 /* REVIEWS SECTION*/
@@ -432,14 +448,13 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 50vh;
     background-color: #f6f6f6;
-    min-height: 80vh;
-    min-height: 50vh;
+    min-height: 73vh;
 }
 
 .article-rev {
     padding: 20px;
+    margin-top: 0;
 }
 
 .artcl-img {
@@ -449,51 +464,83 @@ section h2 {
 .footer-info {
     padding: 20px 0;
 }
+
 /* REVIWES SLIDESHOW*/
+
 .item-1,
 .item-2,
-.item-3{
+.item-3 {
     position: absolute;
     overflow: hidden;
     color: black;
-    width: 80%;
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+    width: 90%;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
-.artcl-rev{
+
+.artcl-rev {
     text-align: center;
 }
 
-.item-1{
-	animation-name: anim-1;
+.item-1 {
+    animation-name: anim-1;
 }
 
-.item-2{
-	animation-name: anim-2;
+.item-2 {
+    animation-name: anim-2;
 }
 
-.item-3{
-	animation-name: anim-3;
+.item-3 {
+    animation-name: anim-3;
 }
 
 @keyframes anim-1 {
-	0%, 8.3% {  opacity: 0; }
-  8.3%,25% {  opacity: 1; }
-  33.33%, 100% {  opacity: 0; }
+    0%,
+    8.3% {
+        opacity: 0;
+    }
+    8.3%,
+    25% {
+        opacity: 1;
+    }
+    33.33%,
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes anim-2 {
-	0%, 33.33% {  opacity: 0; }
-  41.63%, 58.29% {  opacity: 1; }
-  66.66%, 100% {  opacity: 0; }
+    0%,
+    33.33% {
+        opacity: 0;
+    }
+    41.63%,
+    58.29% {
+        opacity: 1;
+    }
+    66.66%,
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes anim-3 {
-	0%, 66.66% {  opacity: 0; }
-  74.96%, 91.62% {  opacity: 1; }
-  100% {  opacity: 0; }
+    0%,
+    66.66% {
+        opacity: 0;
+    }
+    74.96%,
+    91.62% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 /* CONTACT STYLE -----------------*/
 
 .con-flex {
@@ -552,7 +599,14 @@ input[type=submit]:active {
 
 .contact-info {
     font-size: 1em;
-    text-align: center;
+}
+
+.footer-info {
+    margin-left: 8vw;
+}
+
+.footer-info span {
+    color: #CFA670;
 }
 
 /* Social icons -----------*/
@@ -562,7 +616,7 @@ input[type=submit]:active {
 }
 
 .social-icons span {
-    color: #FFF;
+    color: #CFA670;
 }
 
 .fa-facebook:hover,
@@ -590,6 +644,33 @@ input[type=submit]:active {
 
 /* FOOTER STYLE -----------------*/
 
+.hours::before {
+    content: url(images/Icons/clock_icon.png);
+    margin-right: 10px;
+}
+
+.phone-num::before {
+    content: url(images/Icons/phone_icon.png);
+    margin-right: 10px;
+}
+
+.mail::before {
+    content: url(images/Icons/mail_icon.png);
+    margin-right: 10px;
+}
+
+.location::before {
+    content: url(images/Icons/loc_icon.png);
+    margin-right: 10px;
+}
+
+.parking::before {
+    content: url(images/Icons/parking_icon.png);
+    margin-right: 10px;
+}
+
+
+
 .bottom-footer {
     text-align: center;
 }
@@ -609,6 +690,10 @@ input[type=submit]:active {
     padding-top: 57px;
 }
 
+.gal-img {
+    border: 2px solid #CFA670;
+}
+
 #list img {
     display: block;
     margin: auto;
@@ -626,8 +711,22 @@ input[type=submit]:active {
 
 /* Artist page */
 
+.artist-style {
+    font-family: 'Oswald', sans-serif;
+    color: #f6f6f6;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.artist-name {
+    margin-bottom: 19px;
+}
+
+
 .bio-gal p {
-    padding: 5vw;
+    margin: auto;
+    margin-top: 60px;
+    max-width: 376px;
 }
 
 .bio img {
@@ -639,6 +738,7 @@ input[type=submit]:active {
 }
 
 .artist-main-body {
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
 }
@@ -654,16 +754,32 @@ input[type=submit]:active {
     justify-content: center;
 }
 
+
 /*Media Queries------------------------*/
 
 @media only screen and (min-width: 768px) {
-    .artist-main-body {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
+    .section-art {
+        margin-top: 12vh;
     }
 
-    .right {
-        margin-top: 48px;
+    .bio-gal {
+        margin-top: 12vh;
+        border-right: 2px solid #CFA670;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 70%;
+        left: 12%;
+    }
+
+    .artist-main-body {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        margin-bottom: 130px;
+
     }
 
     .grid {
@@ -735,9 +851,26 @@ input[type=submit]:active {
         display: block;
     }
 
+    .footer-info {
+        text-align: left;
+        margin-left: 4vw;
+        letter-spacing: .12em;
+    }
+
+    .bio-gal p {
+        width: 90%;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 65%;
+        left: 16%;
+    }
+
     #list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -763,4 +896,52 @@ input[type=submit]:active {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .footer-info {
+        text-align: left;
+        margin-left: 3vw;
+        letter-spacing: .12em;
+    }
+
+    .footer-info:first-of-type {
+        padding: 0;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .reviews {
+        min-height: 55vh;
+    }
+
+    .bio-gal p {
+        padding: 0;
+        margin: auto;
+        margin-top: 60px;
+        width: 60%;
+    }
+}
+
+/* MODALS ----------------- */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }

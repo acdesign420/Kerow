@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <IfModule mod_expires.c>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <IfModule mod_expires.c style="display:none">
         ExpiresActive on # Your document html ExpiresByType text/html "access plus 0 seconds" # Media: images, video, audio ExpiresByType audio/ogg "access plus 1 month" ExpiresByType image/gif "access plus 1 month" ExpiresByType image/jpeg "access plus 1 month" ExpiresByType image/png "access plus 1 month" ExpiresByType video/mp4 "access plus 1 month" ExpiresByType video/ogg "access plus 1 month" ExpiresByType video/webm "access plus 1 month"
     </IfModule>
     <script type="application/ld+json">
@@ -74,7 +76,6 @@
     <!-- End Google Tag Manager -->
     <!--    // meta tags //-->
     <meta name="description" content="Our tattoo shop is a newly opened shop in Kosice. Even though we are one of the younger residents in town we make ti up with our creativity and professional care. " />
-    <meta name="keywords" content="kerow tattoo studio, tattoo shop, kerow, tattoo shop Kosice" />
     <meta name="author" content="Kerow">
     <meta name="robots" content="index, follow">
     <!--    //comment open graph //-->
@@ -99,7 +100,7 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWDQ2F9"
+    <noscript style="display:none"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWDQ2F9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="hero">
@@ -128,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
                 <a href="artists.html">Artists</a>
-                <a href="#">FAQ</a>
+                <a href="faq.html">FAQ</a>
                 <a href="#sec-contact">Contact</a>
 
             </div>
@@ -140,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="logo"><img src="images/logo-white.png" class="img" alt="kerow_logo"></div>
                 <a class="desk-nav-a" href="#">Home</a>
                 <a class="desk-nav-a" href="artists.html">Artists</a>
-                <a class="desk-nav-a" href="#">FAQ</a>
+                <a class="desk-nav-a" href="faq.html">FAQ</a>
                 <a class="desk-nav-a" href="#sec-contact">Contact</a>
             </div>
         </nav>
@@ -152,6 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h4>About us</h4>
                 <h2>What do we do</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis diam. Nullam at arcu a est sollicitudin euismod. Aliquam erat volutpat. Etiam commodo dui eget wisi. Etiam dictum tincidunt diam. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nunc auctor. Fusce aliquam vestibulum ipsum. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Fusce suscipit libero eget elit. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Suspendisse nisl. Aliquam erat volutpat.</p>
+                <a href="faq.html" class="link-faq">Answers for your questions</a>
             </div>
         </section>
         <section class="artists">
@@ -212,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </article>
         </section>
         <section id="sec-contact" class="contact">
-            <h4>Contact us</h4>
+            <h4>Contact</h4>
             <h2>Get in touch with us</h2>
             <div class="con-flex">
                 <div class="contact-form flex-item">
@@ -231,10 +233,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </form>
                 </div>
                 <div class="contact-info flex-item">
-                    <div class="mobile footer-info"> +421 949 *** ***</div>
-                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
-                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
-                    <div class="hours footer-info"> Monday | Friday: 10.00-16.00 </div>
+
+                    <div class="mail footer-info">kerow.tattoo@gmail.com</div>
+                    <div class="phone-num footer-info">+421 949 111 123</div>
+                    <div class="hours footer-info">Monday | Friday: 10.00-16.00 </div>
+                    <div class="location footer-info">Moyzesová 36, 04001 Kosice, Slovakia</div>
+                    <div class="parking footer-info"><span>Parking</span></div>
                     <div class="social-icons footer-info">
                         <a target="_blank" href="https://www.facebook.com/kerow.official/"> <span class="fa fa-facebook"></span></a>
                         <a target="_blank" href="https://instagram.com/kerow.official/"> <span class="fa fa-instagram"></span></a>
