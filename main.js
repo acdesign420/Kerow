@@ -75,9 +75,9 @@ function showPhotos(data) {
 
 // Show single bio  of artist next to gallery in artist.html from different database as gallery is
 
-function getSingleBio(){
-
-          fetch("http://acdesign.in/MyWordPress/wp-json/wp/v2/artist?_embed")
+function getSingleBio(artistid){
+    console.log(artistid)
+          fetch("http://acdesign.in/MyWordPress/wp-json/wp/v2/artist/"+artistid+"/?_embed")
         .then(res => res.json())
         .then(showSingleBio);
 }
@@ -89,8 +89,8 @@ function showSingleBio(json){
     let list = document.querySelector("#bio");
     let template = document.querySelector("#about-artist").content;
 
-    json.forEach(function(theArtist){
-
+    //json.forEach(function(theArtist){
+        let theArtist=json
         let clone= template.cloneNode(true);
         let name = clone.querySelector("h2");
         let style = clone.querySelector("h4");
@@ -108,7 +108,7 @@ function showSingleBio(json){
 
 
 
-    })
+   // })
 
 }
 
@@ -132,8 +132,14 @@ function showArtists(categories) {
 
 }
 
-getBio();
+var searchParams = new URLSearchParams(window.location.search);
+if(searchParams.has("artistid")){
+    getSingleBio(searchParams.get("artistid"));
+} else {
+    getBio();
+}
+
 getArtists();
 getAllPhotos();
-getSingleBio();
+
 
