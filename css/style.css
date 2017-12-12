@@ -439,7 +439,7 @@ section h2 {
 .reviews {
     display: flex;
     flex-direction: column;
-    background-image: url(images/artist-banner.png);
+    background-image: url(../images/artist-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
