@@ -30,12 +30,12 @@ function showBio(json){
         let clone= template.cloneNode(true);
         let name = clone.querySelector("h3");
         let style = clone.querySelector("h5");
-        let description = clone.querySelector("p");
+
         let img = clone.querySelector("img");
 
         name.textContent = theArtist.acf.name;
         style.textContent = theArtist.acf.style;
-        description.textContent = theArtist.acf.description;
+
         img.setAttribute("src", theArtist._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url);
 
         clone.querySelector('.containerP').addEventListener('click', function(){
@@ -128,10 +128,14 @@ function showArtists(categories) {
 
 
 
-
-
 }
+document.querySelectorAll('.faq-questions button').forEach(function (b) {
+    b.addEventListener("click", function (e) {
 
+        e.target.nextElementSibling.classList.toggle('expandable');
+
+    })
+});
 var searchParams = new URLSearchParams(window.location.search);
 if(searchParams.has("artistid")){
     getSingleBio(searchParams.get("artistid"));

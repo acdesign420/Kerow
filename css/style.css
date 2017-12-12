@@ -13,7 +13,6 @@ General------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Secular+One');
 @import url('https://fonts.googleapis.com/css?family=Teko');
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-
 * {
     font-size: 1em;
     font-family: 'Cabin', sans-serif;
@@ -24,7 +23,6 @@ a {
     text-decoration: none;
     color: #000608;
 }
-
 
 body {
     margin: 0;
@@ -77,6 +75,7 @@ h5 span {
 .img {
     width: 100%;
 }
+
 
 /*Header------------------------*/
 
@@ -148,6 +147,7 @@ h5 span {
     font-size: 36px;
     padding: 8px 21px;
 }
+
 
 /*HERO styles------------------------*/
 
@@ -361,6 +361,7 @@ section h2 {
     filter: grayscale(100%);
 }
 
+
 /* Artists Section------------------------*/
 
 .containerP {
@@ -425,6 +426,7 @@ section h2 {
     text-transform: uppercase;
 }
 
+
 /* REVIEWS SECTION*/
 
 .reviews h2,
@@ -459,6 +461,7 @@ section h2 {
 .footer-info {
     padding: 20px 0;
 }
+
 
 /* REVIWES SLIDESHOW*/
 
@@ -536,6 +539,7 @@ section h2 {
     }
 }
 
+
 /* CONTACT STYLE -----------------*/
 
 .con-flex {
@@ -604,6 +608,7 @@ input[type=submit]:active {
     color: #CFA670;
 }
 
+
 /* Social icons -----------*/
 
 .social-icons {
@@ -624,7 +629,6 @@ input[type=submit]:active {
     transition: .5s
 }
 
-
 .map_frame {
     border: 1px solid red;
     width: 100vw;
@@ -636,6 +640,7 @@ input[type=submit]:active {
     width: 100%;
     height: 100%;
 }
+
 
 /* FOOTER STYLE -----------------*/
 
@@ -664,8 +669,6 @@ input[type=submit]:active {
     margin-right: 10px;
 }
 
-
-
 .bottom-footer {
     text-align: center;
 }
@@ -691,7 +694,6 @@ input[type=submit]:active {
     filter: gray;
     -webkit-filter: grayscale(1);
     -webkit-transition: all .8s ease-in-out;
-
 }
 
 #list img:hover {
@@ -699,6 +701,7 @@ input[type=submit]:active {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
 }
+
 
 /* Artist page */
 
@@ -713,7 +716,6 @@ input[type=submit]:active {
     margin-bottom: 19px;
 }
 
-
 .bio-gal p {
     margin: auto;
     margin-top: 60px;
@@ -721,7 +723,6 @@ input[type=submit]:active {
 }
 
 .bio img {
-
     padding: 80px 20px;
     filter: gray;
     -webkit-filter: grayscale(1);
@@ -746,73 +747,95 @@ input[type=submit]:active {
 }
 
 
+/* FAQ */
+
+.faq-questions {
+    background-color: #f6f6f6;
+    color: #000608;
+    text-align: center;
+    padding: 15px 5vw;
+}
+
+.faq-questions p {
+    transition: 0.4s;
+}
+
+.faq-questions button {
+    background-color: #f6f6f6;
+    color: #000;
+    padding: 20px 80px;
+    margin: 15px;
+    width: 70%;
+    text-align: center;
+    border: 2px solid #CFA670;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.faq-questions button:hover {
+    background-color: #CFA670;
+    color: #FFF;
+}
+
+.expandable {
+    display: none;
+}
+
+
 /*Media Queries------------------------*/
 
 @media only screen and (min-width: 768px) {
     .section-art {
         margin-top: 12vh;
     }
-
     .bio-gal {
         margin-top: 12vh;
     }
-
     .item-1,
     .item-2,
     .item-3 {
         width: 70%;
         left: 12%;
     }
-
     .artist-main-body {
         margin-top: 0;
         display: grid;
         grid-template-columns: 2fr 3fr;
         margin-bottom: 130px;
-
     }
-
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         -webkit-filter: grayscale(0);
         -webkit-transform: scale(1.01);
     }
-
     #list {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .con-flex {
         flex-direction: row;
     }
-
     .flex-item {
         width: 50%;
     }
-
     form {
         width: 90%;
         margin: auto;
     }
-
     .contact-form {
         padding: 0;
     }
-
     .contact-info {
         order: -1;
     }
-
     #mobile-nav {
         display: none;
     }
-
     #desktop-nav {
         display: block;
     }
-
     #desktop-nav a {
         display: inline-block;
         font-size: 1.15em;
@@ -820,37 +843,32 @@ input[type=submit]:active {
         color: #f6f6f6;
         padding: 10px 15px;
     }
-
     #desktop-nav a:hover {
         color: #CFA670;
     }
-
     #desktop-nav div {
         margin-right: auto;
     }
-
     .logo {
         width: 8vw;
     }
-
     .hero-text img {
         display: none;
     }
-
     .hero-desktop {
         display: block;
     }
-
     .footer-info {
         text-align: left;
         margin-left: 4vw;
         letter-spacing: .12em;
     }
-
     .bio-gal p {
         width: 90%;
     }
-
+    .faq-questions button {
+        padding: 20px 200px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -860,56 +878,51 @@ input[type=submit]:active {
         width: 65%;
         left: 16%;
     }
-
     #list {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
     .grid,
     .width-fix {
         width: 85%;
         margin: auto;
         padding: 0;
     }
-
     .con-flex {
         width: 85%;
         margin: auto;
     }
-
     .logo {
         width: 5vw;
     }
-
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
     .footer-info {
         text-align: left;
         margin-left: 3vw;
         letter-spacing: .12em;
     }
-
     .footer-info:first-of-type {
         padding: 0;
         margin-top: 0;
         padding-bottom: 20px;
     }
-
     .reviews {
         min-height: 55vh;
     }
-
     .bio-gal p {
         padding: 0;
         margin: auto;
         margin-top: 60px;
         width: 60%;
     }
+    .faq-questions button {
+        padding: 20px 250px;
+    }
 }
+
 
 /* MODALS ----------------- */
 
