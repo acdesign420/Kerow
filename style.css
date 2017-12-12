@@ -690,10 +690,6 @@ input[type=submit]:active {
     padding-top: 57px;
 }
 
-.gal-img {
-    border: 2px solid #CFA670;
-}
-
 #list img {
     display: block;
     margin: auto;
@@ -764,7 +760,6 @@ input[type=submit]:active {
 
     .bio-gal {
         margin-top: 12vh;
-        border-right: 2px solid #CFA670;
     }
 
     .item-1,
