@@ -10,11 +10,6 @@ font-family: 'Cabin', sans-serif;
 
 General------------------------*/
 
-@font-face {
-    font-family: 'tancursive';
-    src: url('Tangerine_Bold.ttf');
-}
-
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Secular+One');
 @import url('https://fonts.googleapis.com/css?family=Teko');
 @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -418,7 +413,7 @@ section h2 {
     align-items: center;
     width: 100%;
     min-height: 55vh;
-    background-image: url(images/artist-banner.png);
+    background-image: url(../images/artist-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -645,27 +640,27 @@ input[type=submit]:active {
 /* FOOTER STYLE -----------------*/
 
 .hours::before {
-    content: url(images/Icons/clock_icon.png);
+    content: url(../images/Icons/clock_icon.png);
     margin-right: 10px;
 }
 
 .phone-num::before {
-    content: url(images/Icons/phone_icon.png);
+    content: url(../images/Icons/phone_icon.png);
     margin-right: 10px;
 }
 
 .mail::before {
-    content: url(images/Icons/mail_icon.png);
+    content: url(../images/Icons/mail_icon.png);
     margin-right: 10px;
 }
 
 .location::before {
-    content: url(images/Icons/loc_icon.png);
+    content: url(../images/Icons/loc_icon.png);
     margin-right: 10px;
 }
 
 .parking::before {
-    content: url(images/Icons/parking_icon.png);
+    content: url(../images/Icons/parking_icon.png);
     margin-right: 10px;
 }
 
