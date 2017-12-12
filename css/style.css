@@ -701,7 +701,11 @@ input[type=submit]:active {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
 }
-
+/* Video section*/
+.sketch-video{
+    background-color: #f6f6f6;
+    color: #000;
+}
 
 /* Artist page */
 
