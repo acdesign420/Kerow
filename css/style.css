@@ -287,6 +287,15 @@ section h2 {
     border-bottom: 2px solid #CFA670;
     text-decoration: none;
 }
+.link-art {
+    color: #f6f6f6;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #CFA670;
+    text-decoration: none;
+}
+
 
 .width-fix {
     padding: 0 8vw;
@@ -339,7 +348,7 @@ section h2 {
     font-style: normal;
 }
 
-.artists h2 {
+.artists {
     text-align: center;
 }
 
@@ -580,6 +589,7 @@ input[type="text"]:focus {
 
 input[type=submit] {
     font-size: 1.2em;
+    font-family: 'Oswald', sans-serif;
     display: block;
     margin: auto;
     background-color: #000608;
