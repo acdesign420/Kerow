@@ -55,7 +55,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'tancursive', cursive;
+    font-family: 'Great Vibes', cursive;
     color: #CFA670;
     font-size: 2.1em;
     text-align: center;
@@ -84,8 +84,8 @@ h5 span {
     z-index: 998;
     top: 0;
     width: 100%;
-    background-color: #000608;
     text-decoration: none;
+    background-color: #000608;
 }
 
 .width-nav {
@@ -164,8 +164,6 @@ h5 span {
     left: 0;
     z-index: -1;
     overflow: hidden;
-    background: url(../assets/Strum-Away.jpg) no-repeat 50% 50%;
-    background-size: cover;
 }
 
 .hero-video {
@@ -287,6 +285,7 @@ section h2 {
     border-bottom: 2px solid #CFA670;
     text-decoration: none;
 }
+
 .link-art {
     color: #f6f6f6;
     display: inline-block;
@@ -294,6 +293,14 @@ section h2 {
     padding-bottom: 3px;
     border-bottom: 2px solid #CFA670;
     text-decoration: none;
+}
+
+.link-faq:hover,
+.link-faq:active,
+.link-art:hover,
+.link-art:active {
+    color: #CFA670;
+    transition: .3s;
 }
 
 
@@ -480,7 +487,7 @@ section h2 {
     overflow: hidden;
     color: black;
     width: 90%;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     font-size: 1.1em;
@@ -603,6 +610,7 @@ input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #CFA670;
     color: #000608;
+    transition: .4s;
 }
 
 .contact-info {
@@ -710,10 +718,22 @@ input[type=submit]:active {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
 }
+
 /* Video section*/
-.sketch-video{
+
+.sketch-video {
     background-color: #f6f6f6;
     color: #000;
+    padding-top: 1px;
+    padding-bottom: 80px;
+}
+
+.art-video {
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Artist page */
@@ -766,11 +786,12 @@ input[type=submit]:active {
     background-color: #f6f6f6;
     color: #000608;
     text-align: center;
-    padding: 15px 5vw;
+    padding: 40px 1vw;
 }
 
 .faq-questions p {
     transition: 0.4s;
+    padding: 0 1.5em;
 }
 
 .faq-questions button {
@@ -858,6 +879,7 @@ input[type=submit]:active {
     }
     #desktop-nav a:hover {
         color: #CFA670;
+        transition: .3s;
     }
     #desktop-nav div {
         margin-right: auto;
@@ -881,6 +903,14 @@ input[type=submit]:active {
     }
     .faq-questions button {
         padding: 20px 200px;
+    }
+
+    .art-video {
+        position: relative;
+        height: 0;
+        padding-bottom: 45%;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -933,6 +963,14 @@ input[type=submit]:active {
     }
     .faq-questions button {
         padding: 20px 250px;
+    }
+
+    .art-video {
+        position: relative;
+        height: 0;
+        padding-bottom: 40%;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
