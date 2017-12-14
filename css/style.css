@@ -84,8 +84,10 @@ h5 span {
     z-index: 998;
     top: 0;
     width: 100%;
-    background-color: #000608;
     text-decoration: none;
+}
+.bckgrnd-col{
+     background-color: #000608;
 }
 
 .width-nav {
