@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
         }
@@ -14,5 +14,4 @@ $(window).scroll(function() {
             $('#desktop-nav').removeClass('bckgrnd-col');
         }
     });
-=======
->>>>>>> origin/master
+
