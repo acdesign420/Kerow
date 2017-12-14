@@ -88,6 +88,7 @@ h5 span {
 }
 .bckgrnd-col{
      background-color: #000608;
+    transition: .3s;
 }
 
 .width-nav {
@@ -427,18 +428,32 @@ section h2 {
 
 .artists-land-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 55vh;
-    background-image: url(../images/artist-banner.png);
+    background-image: url(../images/art_banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq-land-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 55vh;
+    background-image: url(../images/faq_banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .art-h2 {
-    margin-top: 60px;
+    margin-top: 2px;
     margin-bottom: 0;
     text-transform: uppercase;
 }
@@ -458,7 +473,7 @@ section h2 {
 .reviews {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/artist-banner.png);
+    background-image: url(../images/marble.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -632,6 +647,12 @@ input[type=submit]:active {
 
 .social-icons {
     font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 5px;
 }
 
 .social-icons span {
@@ -639,7 +660,8 @@ input[type=submit]:active {
 }
 
 .fa-facebook:hover,
-.fa-instagram:hover {
+.fa-instagram:hover,
+.fa-linkedin:hover {
     color: #CFA670;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -692,7 +714,8 @@ input[type=submit]:active {
     text-align: center;
 }
 
-.bottom-footer span {
+.bottom-footer span,
+.bottom-footer a{
     color: #CFA670;
 }
 
@@ -783,7 +806,6 @@ input[type=submit]:active {
 
 
 /* FAQ */
-
 .faq-questions {
     background-color: #f6f6f6;
     color: #000608;
